@@ -21,6 +21,14 @@ app.use("/files", express.static(path.join(__dirname, "public")));
 app.use(cors());
 app.use(express.json());
 
+// import router
+
+import categoryRoute from "./modules/category/_api.js";
+
+// register router from middleware
+
+app.use(categoryRoute);
+
 db();
 
 // Middleware Error
