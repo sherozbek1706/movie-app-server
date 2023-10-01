@@ -62,3 +62,27 @@ GET http://localhost:5000/movies/65193e2323bc3068309cb8bb
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+DELETE http://localhost:5000/movies/65193e2323bc3068309cb8bb
+
+
+
+
+
+
