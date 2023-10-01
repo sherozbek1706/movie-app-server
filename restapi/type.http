@@ -1,0 +1,17 @@
+### POST
+POST http://localhost:5000/type
+Content-Type: application/json
+
+{
+  "name": "Multifilm"
+}
+
+
+
+
+
+
+
+
+
+
