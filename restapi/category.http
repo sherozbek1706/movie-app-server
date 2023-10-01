@@ -43,3 +43,16 @@ Content-Type: application/json
 
 
 
+### UN REMOVE
+DELETE http://localhost:5000/category/un/6518f8ae92beda23873a6a9d
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
