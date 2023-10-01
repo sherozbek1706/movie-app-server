@@ -1,0 +1,19 @@
+POST http://localhost:5000/movies
+Content-Type: application/json
+
+{
+  "title":"Avengers",
+  "country":"USA, AMERICA",
+  "year": 2019,
+  "lang": "EN",
+  "category_id": "6518f8ae92beda23873a6a9d",
+  "image":"AMERICA.png",
+  "content":"OKAY",
+  "rate":7,
+  "type_id":"65191dabc8a19da7ff2a495d"
+}
+
+
+
+
+
