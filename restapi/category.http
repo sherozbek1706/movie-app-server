@@ -1,0 +1,68 @@
+### POST
+POST http://localhost:5000/category
+Content-Type: application/json
+
+{
+  "name": "Dramma"
+}
+
+
+
+
+
+
+
+
+
+
+
+### LIST
+GET http://localhost:5000/category
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+### REMOVE
+DELETE http://localhost:5000/category/6518f8ae92beda23873a6a9d
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+
+### UN REMOVE
+DELETE http://localhost:5000/category/un/6518f8ae92beda23873a6a9d
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+
+
+
+### EDIT
+PATCH http://localhost:5000/category/6518f8ae92beda23873a6a9d
+Content-Type: application/json
+
+{
+  "name": "Multi Dramma"
+}
