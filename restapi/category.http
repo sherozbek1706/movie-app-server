@@ -16,3 +16,16 @@ Content-Type: application/json
 
 
 
+### LIST
+GET http://localhost:5000/category
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
