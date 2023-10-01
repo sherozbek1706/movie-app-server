@@ -1,6 +1,8 @@
 import express from "express";
 import { config } from "./shared/config/index.js";
 import { db } from "./db/index.js";
+import swaggerUi from "swagger-ui-express";
+import { swaggerFile } from "./shared/swagger/swagger-output.js";
 import cors from "cors";
 
 import { fileURLToPath } from "url";
@@ -20,13 +22,12 @@ app.use("/files", express.static(path.join(__dirname, "public")));
 // middleware
 app.use(cors());
 app.use(express.json());
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 // import router
-
 import categoryRoute from "./modules/category/_api.js";
 
 // register router from middleware
-
 app.use(categoryRoute);
 
 db();
