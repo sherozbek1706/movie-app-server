@@ -40,3 +40,25 @@ GET http://localhost:5000/movies
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+GET http://localhost:5000/movies/65193e2323bc3068309cb8bb
+
+
+
+
+
+
+
