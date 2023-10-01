@@ -57,3 +57,12 @@ Content-Type: application/json
 
 
 
+
+
+### EDIT
+PATCH http://localhost:5000/type/65191da3c8a19da7ff2a495b
+Content-Type: application/json
+
+{
+  "name": "Dramma Serial"
+}
