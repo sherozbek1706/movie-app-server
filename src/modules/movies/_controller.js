@@ -84,3 +84,22 @@ export const unremoveMovies = async (req, res, next) => {
   }
 };
 
+/**
+ *
+ * @param {express.Request} req
+ * @param {express.Response} res
+ * @param {express.NextFunction} next
+ */
+
+export const editMovies = async (req, res, next) => {
+  try {
+    const result = await edit({
+      body: req.body,
+      image: `/files/movies/${req.file.filename}`,
+      params: req.params,
+    });
+    res.status(200).json({ data: result });
+  } catch (error) {
+    next(error);
+  }
+};
