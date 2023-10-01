@@ -28,3 +28,12 @@ export class UnauthorizedError extends Error {
   }
 }
 
+export class ForbiddenError extends Error {
+  constructor(msg) {
+    super(msg);
+
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, ForbiddenError);
+    }
+  }
+}
