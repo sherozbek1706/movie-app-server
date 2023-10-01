@@ -1,5 +1,5 @@
 import express from "express";
-import { add, edit, list, remove, unremove } from "./services/index.js";
+import { add, edit, list, remove, unremove } from "./services/_index.js";
 
 /**
  *
