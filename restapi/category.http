@@ -56,3 +56,13 @@ Content-Type: application/json
 
 
 
+
+
+
+### EDIT
+PATCH http://localhost:5000/category/6518f8ae92beda23873a6a9d
+Content-Type: application/json
+
+{
+  "name": "Multi Dramma"
+}
