@@ -12,6 +12,21 @@ export const edit = async ({ body, params, image }) => {
     throw new NotFoundError("Movies Not Found!");
   }
 
+  const existingType = await Type.findOne({ _id: type_id, is_deleted: false });
+
+  if (!existingType) {
+    throw new NotFoundError("Type Not Found!");
+  }
+
+  const existingCategory = await Category.findOne({
+    _id: category_id,
+    is_deleted: false,
+  });
+
+  if (!existingCategory) {
+    throw new NotFoundError("Category Not Found!");
+  }
+
   return Movies.findByIdAndUpdate(
     { _id: params.id },
     { ...body, image },
