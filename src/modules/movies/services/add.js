@@ -12,5 +12,14 @@ export const add = async ({ body, image }) => {
     throw new NotFoundError("Type Not Found!");
   }
 
+  const existingCategory = await Category.findOne({
+    _id: category_id,
+    is_deleted: false,
+  });
+
+  if (!existingCategory) {
+    throw new NotFoundError("Category Not Found!");
+  }
+
   return Movies.create({ ...body, image });
 };
