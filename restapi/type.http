@@ -15,3 +15,17 @@ Content-Type: application/json
 
 
 
+
+### LIST
+GET http://localhost:5000/type
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
