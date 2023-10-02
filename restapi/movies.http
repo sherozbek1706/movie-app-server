@@ -1,5 +1,6 @@
 POST http://localhost:5000/movies
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
 
 {
   "title":"Avengers",
@@ -25,7 +26,10 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:5000/movies
+GET http://localhost:5000/moviesv
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
 
 
 
@@ -55,6 +59,9 @@ GET http://localhost:5000/movies
 
 ###
 GET http://localhost:5000/movies/65193e2323bc3068309cb8bb
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
 
 
 
@@ -80,6 +87,9 @@ GET http://localhost:5000/movies/65193e2323bc3068309cb8bb
 
 ###
 DELETE http://localhost:5000/movies/65193e2323bc3068309cb8bb
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
 
 
 
@@ -101,6 +111,9 @@ DELETE http://localhost:5000/movies/65193e2323bc3068309cb8bb
 
 ###
 DELETE http://localhost:5000/movies/un/65193e2323bc3068309cb8bb
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
 
 
 
@@ -123,6 +136,7 @@ DELETE http://localhost:5000/movies/un/65193e2323bc3068309cb8bb
 ###
 PUT http://localhost:5000/movies/65193e2323bc3068309cb8bb
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
 
 {
   "title":"iPMan",
