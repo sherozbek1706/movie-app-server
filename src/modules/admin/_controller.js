@@ -1,6 +1,7 @@
 import express from "express";
 import {
   add,
+  edit,
   list,
   remove,
   show,
@@ -76,6 +77,21 @@ export const removeAdmin = async (req, res, next) => {
 export const unremoveAdmin = async (req, res, next) => {
   try {
     const result = await unremove({ params: req.params });
+    res.status(200).json({ data: result });
+  } catch (error) {
+    next(error);
+  }
+};
+
+/**
+ *
+ * @param {express.Request} req
+ * @param {express.Response} res
+ * @param {express.NextFunction} next
+ */
+export const editAdmin = async (req, res, next) => {
+  try {
+    const result = await edit({ params: req.params, body: req.body });
     res.status(200).json({ data: result });
   } catch (error) {
     next(error);
