@@ -14,5 +14,11 @@ export const login = async ({ body }) => {
     throw new NotFoundError("This Username Not Found!");
   }
 
+  const correct = await bcryptjs.compare(password, exist_username.password);
+
+  if (!correct) {
+    throw new BadRequestError("Password Incorrect");
+  }
+
   return { token };
 };
