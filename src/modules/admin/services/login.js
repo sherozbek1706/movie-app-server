@@ -20,5 +20,15 @@ export const login = async ({ body }) => {
     throw new BadRequestError("Password Incorrect");
   }
 
+  const payload = {
+    user: {
+      id: exist_username._id,
+    },
+  };
+
+  const token = jwt.sign(payload, config.jwt.secret, {
+    expiresIn: config.jwt.expirec_in,
+  });
+
   return { token };
 };
