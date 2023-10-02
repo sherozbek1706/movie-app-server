@@ -4,6 +4,7 @@ import {
   addAdmin,
   editAdmin,
   listAdmin,
+  loginAdmin,
 } from "./_controller.js";
 
 const router = Router();
@@ -13,5 +14,6 @@ const mEditAdmin = [isLoggedIn, isMongoId];
 router.post("/admin/add", isLoggedIn, addAdmin);
 router.get("/admin", isLoggedIn, listAdmin);
 router.put("/admin/:id", mEditAdmin, editAdmin);
+router.post("/admin/login", loginAdmin);
 
 export default router;
