@@ -10,5 +10,7 @@ export const add = async ({ body }) => {
     throw new BadRequestError("This username already exist!");
   }
 
+  const hashedPassword = await bcrypt.hash(password, 10);
+
   return Admin.create({ ...body, password: hashedPassword });
 };
