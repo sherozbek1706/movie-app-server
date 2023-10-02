@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { isLoggedIn, isMongoId } from "../../shared/auth/_index.js";
 import {
   addCategory,
   editCategory,
@@ -8,10 +9,15 @@ import {
 } from "./_controller.js";
 const router = Router();
 
-router.post("/category", addCategory);
+const mAddCategory = [isLoggedIn];
+const mRemoveCategory = [isLoggedIn, isMongoId];
+const mUnRemoveCategory = [isLoggedIn, isMongoId];
+const mEditCategory = [isLoggedIn, isMongoId];
+
+router.post("/category", mAddCategory, addCategory);
 router.get("/category", listCategory);
-router.delete("/category/:id", removeCategory);
-router.delete("/category/un/:id", unremoveCategory);
-router.patch("/category/:id", editCategory);
+router.delete("/category/:id", mRemoveCategory, removeCategory);
+router.delete("/category/un/:id", mUnRemoveCategory, unremoveCategory);
+router.patch("/category/:id", mEditCategory, editCategory);
 
 export default router;
