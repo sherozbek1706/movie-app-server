@@ -1,6 +1,7 @@
 ### POST
 POST http://localhost:5000/category
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
 
 {
   "name": "Dramma"
@@ -32,6 +33,9 @@ Content-Type: application/json
 ### REMOVE
 DELETE http://localhost:5000/category/6518f8ae92beda23873a6a9d
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
 
 
 
@@ -46,6 +50,9 @@ Content-Type: application/json
 ### UN REMOVE
 DELETE http://localhost:5000/category/un/6518f8ae92beda23873a6a9d
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
 
 
 
@@ -62,6 +69,7 @@ Content-Type: application/json
 ### EDIT
 PATCH http://localhost:5000/category/6518f8ae92beda23873a6a9d
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
 
 {
   "name": "Multi Dramma"

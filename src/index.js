@@ -28,11 +28,13 @@ app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 import categoryRoute from "./modules/category/_api.js";
 import typeRoute from "./modules/type/_api.js";
 import moviesRoute from "./modules/movies/_api.js";
+import adminRoute from "./modules/admin/_api.js";
 
 // register router from middleware
 app.use(categoryRoute);
 app.use(typeRoute);
 app.use(moviesRoute);
+app.use(adminRoute);
 
 db();
 

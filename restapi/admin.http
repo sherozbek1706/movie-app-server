@@ -1,10 +1,13 @@
-### POST
-POST http://localhost:5000/type
+### post
+POST http://localhost:5000/admin/add
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
 
 {
-  "name": "Multifilm"
+  "first_name":"She'rozbek",
+  "last_name":"Baxtiyorov",
+  "username":"sherozbek17",
+  "password":"1234"
 }
 
 
@@ -17,26 +20,6 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUx
 
 
 
-### LIST
-GET http://localhost:5000/type
-Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
-
-
-
-
-
-
-
-
-
-
-
-
-### REMOVE
-DELETE http://localhost:5000/type/65191da3c8a19da7ff2a495b
-Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
 
 
 
@@ -50,8 +33,10 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUx
 
 
 
-### UN REMOVE
-DELETE http://localhost:5000/type/un/65191da3c8a19da7ff2a495b
+
+
+### list
+GET http://localhost:5000/admin
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
 
@@ -68,11 +53,129 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUx
 
 
 
-### EDIT
-PATCH http://localhost:5000/type/65191da3c8a19da7ff2a495b
+
+
+
+
+
+
+
+### list
+GET http://localhost:5000/admin/651a517e98681e256771fd2a
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### remove
+DELETE  http://localhost:5000/admin/651a512198681e256771fd27
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### un remove
+DELETE  http://localhost:5000/admin/un/651a512198681e256771fd27
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### edit
+PUT http://localhost:5000/admin/651a512198681e256771fd27
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxYTUxMjE5ODY4MWUyNTY3NzFmZDI3In0sImlhdCI6MTY5NjIyODg5OSwiZXhwIjoxNjk2ODMzNjk5fQ.55mvLkpse8jfR1pP-0HBX1Gns76g92E-wYuHtsA6s_0
 
 {
-  "name": "Dramma Serial"
+  "first_name":"Nurmuhammad",
+  "last_name":"Raimov",
+  "username":"ok",
+  "password":"1234"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### login
+POST http://localhost:5000/admin/login
+Content-Type: application/json
+
+{
+  "username": "ok",
+  "password": "1234"
 }
