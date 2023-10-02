@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { isLoggedIn, isMongoId } from "../../shared/auth/_index.js";
 import {
   addType,
   editType,
@@ -8,10 +9,15 @@ import {
 } from "./_controller.js";
 const router = Router();
 
-router.post("/type", addType);
+const mAddType = [isLoggedIn];
+const mRemoveType = [isLoggedIn, isMongoId];
+const mUnRemoveType = [isLoggedIn, isMongoId];
+const mEditType = [isLoggedIn, isMongoId];
+
+router.post("/type", mAddType, addType);
 router.get("/type", listType);
-router.delete("/type/:id", removeType);
-router.delete("/type/un/:id", unremoveType);
-router.patch("/type/:id", editType);
+router.delete("/type/:id", mRemoveType, removeType);
+router.delete("/type/un/:id", mUnRemoveType, unremoveType);
+router.patch("/type/:id", mEditType, editType);
 
 export default router;
